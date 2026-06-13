@@ -1,87 +1,71 @@
-Colorectal Cancer RNA-seq Analysis
+Colorectal Cancer RNA-seq Analysis (GSE104836)
 
 Overview
 
-This project investigates transcriptomic alterations in colorectal cancer using RNA-seq data from the GEO database. The workflow includes differential expression analysis, functional enrichment analysis, protein-protein interaction (PPI) network construction, and hub gene identification.
+This project investigates transcriptomic alterations in colorectal cancer using RNA-seq data from GEO dataset GSE104836.
+
+The workflow includes:
+
+* Differential Gene Expression (DEG) analysis
+* Functional enrichment analysis (GO and KEGG)
+* Protein–Protein Interaction (PPI) network construction
+* Hub gene identification using Cytoscape
 
 Dataset
 
 * GEO Accession: GSE104836
+* Data Source: NCBI GEO
 * Organism: Homo sapiens
-* Disease: Colorectal Cancer
-* Samples: 20 (10 Tumor vs 10 Normal)
 
 Methods
 
-Differential Expression Analysis
+1. Differential Expression Analysis
 
+* R
 * DESeq2
-* Count normalization
-* Statistical testing
-* Multiple testing correction
+* Filtering of significant DEGs
 
-Functional Enrichment Analysis
+2. Visualization
+
+* PCA
+* Volcano Plot
+* Heatmap
+
+3. Functional Enrichment
 
 * Gene Ontology (GO)
 * KEGG Pathway Analysis
-* clusterProfiler
 
-Network Biology
+4. PPI Network Analysis
 
-* STRING Database
+* STRING database
 * Cytoscape
-* Degree Centrality Analysis
-
-Results
-
-Differentially Expressed Genes
-
-* 4,734 significant DEGs identified
-
-Functional Enrichment Highlights
-
-- Extracellular matrix organization
-- Extracellular structure organization
-- Muscle system process
-- Muscle contraction
-- Cell cycle pathway
-- Cytokine-cytokine receptor interaction
-
-Hub Genes Identified
-
-* MMP1
-* COL1A1
-* MMP3
-* MMP7
-* BGN
-* COL11A1
-* ACAN
-* ADAM12
-* ADAMTS2
-* COL7A1
-
-Tools Used
-
-* R
-* RStudio
-* DESeq2
-* clusterProfiler
-* STRING
-* Cytoscape
+* Network topology analysis
+* Hub gene identification using Degree Centrality
 
 Repository Structure
 
-* Data/
-* DEGs/
-* Enrichment/
-* Figures/
-* PPI/
-* ML_Biomarker/
+Data/ - Input expression data
 
-Planned Future Work
-- Machine Learning-based Biomarker Discovery
+DEGs/ - Differentially expressed genes
 
-Author
+Enrichment/ - GO and KEGG enrichment results
 
-Saloni 
-M.Sc. Bioinformatics
+Figures/ - PCA, Heatmap, Volcano Plot
+
+PPI/ - STRING and Cytoscape network analysis
+
+Analysis.R - Main analysis script
+
+Key Outcomes
+
+* Identification of significantly dysregulated genes
+* Functional enrichment of biological pathways
+* Construction of a colorectal cancer PPI network
+* Identification of candidate hub genes for further biomarker investigation
+
+Future Work
+
+* Machine learning-based biomarker discovery
+* Feature selection and model development
+* Multi-omics integration
