@@ -109,6 +109,11 @@ The biomarker panel was evaluated using Receiver Operating Characteristic (ROC) 
 * **AUC = 1.00**
 
 indicating perfect separation of colorectal cancer and normal samples within the GSE104836 dataset.
+The model achieved an AUC of 1.00 on the GSE104836 dataset. Due to the limited sample size and absence of external validation, this result should be interpreted as preliminary.
+
+## ROC Curve
+
+![ROC Curve](ML Biomarkers/ROC_Curve.png)
 
 ---
 
