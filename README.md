@@ -68,7 +68,7 @@ Data/            - Input expression data
 DEGs/            - Differentially expressed genes
 Enrichment/      - GO and KEGG enrichment results
 Figures/         - PCA, Heatmap, Volcano Plot
-ML Biomarker/    - LASSO biomarker selection results, ROC Curve
+ML_Biomarker/    - LASSO biomarker selection results, ROC Curve
 PPI/             - STRING and Cytoscape network analysis
 updatedAnalysis.R - Main analysis script
 ```
@@ -113,8 +113,7 @@ indicating perfect separation of colorectal cancer and normal samples within the
 The model achieved an AUC of 1.00 on the GSE104836 dataset. Due to the limited sample size and absence of external validation, this result should be interpreted as preliminary.
 
 ## ROC Curve
-
-[![ROC Curve](ML Biomarkers/ROC_Curve.png)](https://github.com/Saloni-Bio-info/Colorectal-Cancer-RNAseq-Analysis/blob/main/ML%20Biomarker/ROC_Curve.png)
+![ROC Curve](ML_Biomarker/ROC_Curve.png)
 
 ---
 
